@@ -10,7 +10,7 @@ We have created the python code working with SciPy's curve_fit to perform this N
 
     popt, pcov = curve_fit(func, xdata, ystack, method='trf', bounds=(0.05, [20, 20, 20, 20, 20, 20, 20, 20]))
 
-This application might be a bit unorthodox for NMR Echo Train inversion, but it does serve as a python's SciPy's example for this process. 
+This application might be a bit unorthodox for typical NMR Echo Train inversion, but it does serve as a python's SciPy's example for this process. 
 
 The sample code and sample data can be found in this repository. Please download all the data and run the python program from the downloaded subdirectory. 
 
