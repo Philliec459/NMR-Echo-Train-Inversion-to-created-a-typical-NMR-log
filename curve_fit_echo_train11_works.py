@@ -193,7 +193,7 @@ for index, row in df.iterrows():
         popt, pcov = curve_fit(func, xdata, ystack, method='trf', bounds=(0.05, [20, 20, 20, 20, 20, 20, 20, 20]))
         #popt, pcov = curve_fit(func_2bin, xdata, ystack, method='trf' )#, bounds=(0.0, [0.1, 0.1, 20, 0, 0, 0, 20, 0]))
 
-        ''' Calculate BVI and MPHI '''
+        ''' Calculate BVI and MPHI doe 33ms T2 Cutoff'''
         mbviarray.append(popt[0]+popt[1]+popt[2]+0.044*popt[3])    
         mphiarray.append(popt[0]+popt[1]+popt[2]+popt[3]+popt[4]+popt[5]+popt[6]+popt[7])
         mffiarray.append((1-0.044)*popt[3]+popt[4]+popt[5]+popt[6]+popt[7])
