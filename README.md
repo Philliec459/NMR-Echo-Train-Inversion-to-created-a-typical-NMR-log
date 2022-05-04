@@ -5,10 +5,10 @@ Back in 1994 when we at Western Atlas were preparing our own software for NMR In
 
 In this repository We have provided the python code using SciPy's curve_fit to perform the NMR inversion. 
 
-    *def func(x,p1,p2,p3,p4,p5,p6,p7,p8):
+    def func(x,p1,p2,p3,p4,p5,p6,p7,p8):
         return (p1*np.exp(-x/4)+p2*np.exp(-x/8)+p3*np.exp(-x/16)+p4*np.exp(-x/32)+p5*np.exp(-x/64)+p6*np.exp(-x/128)+p7*np.exp(-x/256)+p8*np.exp(-x/512))
 
-    popt, pcov = curve_fit(func, xdata, ystack, method='trf', bounds=(0.05, [20, 20, 20, 20, 20, 20, 20, 20]))*
+    popt, pcov = curve_fit(func, xdata, ystack, method='trf', bounds=(0.05, [20, 20, 20, 20, 20, 20, 20, 20]))
 
 This method might be a bit unorthodox for typical NMR Echo Train inversion, but it does provide a SciPy's example for this process. 
 
